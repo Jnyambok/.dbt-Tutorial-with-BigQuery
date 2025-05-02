@@ -1,10 +1,16 @@
 # dbt Project README
 
+
+
+
 This README provides an overview of the dbt (data build tool) project.
+![image](https://github.com/user-attachments/assets/aad2f47c-1859-441c-a373-ca248a8017d0)
+
+
 
 ## Project Description
 
-[Add a brief description of your dbt project here.  What is its purpose?  What problem does it solve? What data transformations does it perform?  For example: "This dbt project transforms raw data from our production database into a clean, analytics-ready data warehouse.  It defines models for customers, orders, and products, and calculates key metrics for business reporting."]
+DBT is a CLI tool that lets us efficiently transform data with SQL. In this project, I created a .dbt project that connects to a data warehouse and performs various SQL queries. dbt encourages DAs to be more involved in data transformation, which does not mean DAs will completely replace the DEs in this process.
 
 ## Project Contents
 
@@ -160,15 +166,3 @@ You can change the materialization of a model in two ways:
         dbt docs serve
         ```
 
-## Troubleshooting
-
-If you encounter the error:
-
-```text
-dbt debug
-11:59:59  1 check failed:
-11:59:59  dbt was unable to connect to the specified database.
-The database returned the following error:
-
- >'NoneType' object has no attribute 'close'
-This indicates an issue with your database connection configuration in your profiles.yml file. Please check the following:Credentials: Ensure that your username, password, and any other authentication details are correct.Host/URL: Verify that the database host or URL is correct.Port: Confirm that the port number is correct.Database/Schema: Double-check that the database and schema names are correct.Driver: Make sure that the correct database driver is installed and configured.Authentication Method: If you are using a keyfile, ensure the path is correct and the keyfile has the necessary permissions.Refer to the dbt documentation for detailed instructions on configuring your profiles.yml file for your specific database: https://docs.getdbt.com/docs/configure-your-profiledbt Commands Used (Based on Your Input)Here are the dbt commands you've used, based on our conversation:python -m venv dbt-core-demo: Creates a virtual environment named "dbt-core-demo".cd dbt-core-demo: Changes the current directory to the virtual environment directory.source scripts/activate (or .\\scripts\\activate on Windows): Activates the virtual environment.pip install dbt-core: Installs the dbt Core package.python.exe -m pip install --upgrade pip: Upgrades the pip package manager.pip install dbt-<your_database_adapter>: Installs the dbt adapter for your specific database.dbt init dbt_core_demo: Initializes a new dbt project.dbt --help: Displays help information about dbt commands.dbt --version: Displays the installed dbt version.Contributing[Add instructions on how others can contribute to your project, if applicable.  For example:]Fork the repository.
