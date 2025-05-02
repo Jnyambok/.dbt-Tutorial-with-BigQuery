@@ -1,8 +1,5 @@
 # dbt Project README
 
-
-
-
 This README provides an overview of the dbt (data build tool) project.
 ![image](https://github.com/user-attachments/assets/aad2f47c-1859-441c-a373-ca248a8017d0)
 
@@ -11,6 +8,8 @@ This README provides an overview of the dbt (data build tool) project.
 ## Project Description
 
 DBT is a CLI tool that lets us efficiently transform data with SQL. In this project, I created a .dbt project that connects to a data warehouse and performs various SQL queries. dbt encourages DAs to be more involved in data transformation, which does not mean DAs will completely replace the DEs in this process.
+
+
 
 ## Project Contents
 
